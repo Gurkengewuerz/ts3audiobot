@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>pr0_bot</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TS3AudioBot">
+      <HintPath>..\TS3AudioBot.dll</HintPath>
+    </Reference>
+    <Reference Include="TSLib">
+      <HintPath>..\TSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Nett">
+      <HintPath>..\Nett.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

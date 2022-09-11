@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  ts3audiobot:
+    image: gurken2108/ts3audiobot:latest
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./data/:/app/data
+    ports:
+      - "3000:58913"
+    logging:
+      # limit logs retained on host to 25MB
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
